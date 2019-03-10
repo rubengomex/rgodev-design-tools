@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #fefefe;
+}
+
+.container {
+  position: relative;
+  width: 60%;
+  margin: 11em auto 0;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 440px;
+      grid-template-rows: 440px;
+  grid-gap: 40px;
+}
+
+.card {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  border-radius: 5%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card--img, .card:hover .card--img__box-1, .card:hover .card--img__box-2, .card:hover .card--img__box-3 {
+  opacity: 0.5;
+}
+
+.card:hover .card--content {
+  bottom: 0;
+}
+
+.card:nth-child(1) .card--content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#c21833), to(transparent));
+  background: linear-gradient(0deg, #c21833, transparent);
+}
+
+.card:nth-child(2) .card--content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8012a5), to(transparent));
+  background: linear-gradient(0deg, #8012a5, transparent);
+}
+
+.card:nth-child(3) .card--content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#3a414c), to(transparent));
+  background: linear-gradient(0deg, #3a414c, transparent);
+}
+
+.card--img, .card--img__box-1, .card--img__box-2, .card--img__box-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card--img__box-1 {
+  background-image: url(./img/img1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card--img__box-2 {
+  background-image: url(./img/img2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card--img__box-3 {
+  background-image: url(./img/img3.jpeg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card--content {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: -100%;
+  padding: 20px;
+  padding-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card--content h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+.card--content h2 span {
+  color: #ffeb3b;
+  font-size: 16px;
+}
+
+.card--content p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-media--item {
+  list-style: none;
+}
+
+.social-media--item a {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=app.css.map */

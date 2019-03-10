@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700')
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Montserrat', sans-serif
+  background: darken(#ffffff, 0.2)
+
+.card
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 300px
+  height: 450px
+  // background: #000
+  background: url(./img/thumbnail.jpg) center no-repeat cover
+  // &--poster
+  //   position: relative
+  //   overflow: hidden
+  &--img
+    // @extend .card--poster
+    // width: 100%
+    background: url(./img/thumbnail.jpg) center no-repeat cover
+
